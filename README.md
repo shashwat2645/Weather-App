@@ -30,9 +30,6 @@ git clone https://github.com/shashwat2645/weather-app.git
 cd weather-app
 ```
 3. **Open the index.html file in your favorite browser**
-```bash
-open index.html
-```
 
 ---
 
