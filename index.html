@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast - Real-Time Weather Updates</title>
+  <meta name="description" content="Check current weather and 5-day forecast for any city worldwide. Beautiful, fast, and accurate weather information.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Search Section -->
+    <div class="glass-card">
+      <h1>Weather Forecast</h1>
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="cityInput" 
+          placeholder="Enter city name..."
+          maxlength="100"
+          autocomplete="off"
+        >
+        <button id="searchBtn">
+          <span id="searchIcon">🔍</span>
+          <span id="searchText">Search</span>
+        </button>
+      </div>
+      <div id="errorContainer"></div>
+    </div>
+
+    <!-- Current Weather -->
+    <div id="currentWeather" class="glass-card">
+      <div class="weather-content">
+        <div class="weather-left">
+          <div class="city-name" id="cityName"></div>
+          <div class="weather-desc" id="weatherDesc"></div>
+          <div class="temperature" id="temperature"></div>
+        </div>
+        <div class="weather-center">
+          <img id="weatherIcon" class="weather-icon" src="" alt="Weather icon">
+        </div>
+        <div class="weather-right">
+          <div class="weather-detail">
+            <span class="detail-icon">🌡️</span>
+            <div>
+              <div class="detail-label">Feels like</div>
+              <div class="detail-value" id="feelsLike"></div>
+            </div>
+          </div>
+          <div class="weather-detail">
+            <span class="detail-icon">💧</span>
+            <div>
+              <div class="detail-label">Humidity</div>
+              <div class="detail-value" id="humidity"></div>
+            </div>
+          </div>
+          <div class="weather-detail">
+            <span class="detail-icon">💨</span>
+            <div>
+              <div class="detail-label">Wind Speed</div>
+              <div class="detail-value" id="windSpeed"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5-Day Forecast -->
+    <div id="forecast">
+      <div class="forecast-grid" id="forecastGrid"></div>
+    </div>
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
